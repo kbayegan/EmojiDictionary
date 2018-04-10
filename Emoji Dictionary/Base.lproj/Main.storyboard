@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J4f-jL-kXH" id="jMW-G5-23B">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="1236" y="-103.89805097451276"/>
         </scene>
-        <!--View Controller-->
+        <!--Emoji Definition Controller-->
         <scene sceneID="XC6-F5-cIn">
             <objects>
-                <viewController id="9s6-xu-WUN" sceneMemberID="viewController">
+                <viewController id="9s6-xu-WUN" customClass="EmojiDefinitionController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oF5-Tl-t0z"/>
                         <viewControllerLayoutGuide type="bottom" id="lIg-bT-13I"/>
@@ -60,9 +60,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Smiley Face" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqm-1Z-AIw">
                                 <frame key="frameInset" minX="26" minY="588" width="333" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="O8R-vb-iK9"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -77,6 +74,10 @@
                             <constraint firstItem="Gqm-1Z-AIw" firstAttribute="leading" secondItem="7oR-dh-eUq" secondAttribute="leadingMargin" constant="10" id="vmb-A1-dRI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiDefLabel" destination="Gqm-1Z-AIw" id="hzH-gj-GDo"/>
+                        <outlet property="emojiLabel" destination="5yi-aw-kah" id="ET1-zI-IWY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hb3-u1-1Yo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

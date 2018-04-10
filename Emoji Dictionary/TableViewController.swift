@@ -31,7 +31,15 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "mySegue", sender: nil)
+        
+        let emoji = emojis[indexPath.row]
+        performSegue(withIdentifier: "mySegue", sender: emoji)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let emojiDefVC = segue.destination as! EmojiDefinitionController
+        emojiDefVC.emoji = sender as! String 
+        
     }
     
 
