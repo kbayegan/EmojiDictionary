@@ -13,9 +13,12 @@ class EmojiDefinitionController: UIViewController {
     var emoji = ""
 
     @IBOutlet weak var emojiLabel: UILabel!
+    @IBOutlet weak var emojiCategoryLbel: UILabel!
     @IBOutlet weak var emojiDefLabel: UILabel!
+    @IBOutlet weak var emojiDateLabel: UILabel!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         emojiLabel.text = emoji
