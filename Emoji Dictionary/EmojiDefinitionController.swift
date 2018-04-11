@@ -10,12 +10,13 @@ import UIKit
 
 class EmojiDefinitionController: UIViewController {
     
+    @IBOutlet weak var emojiLabel: UILabel!
+    @IBOutlet weak var emojiDescription: UILabel!
+    @IBOutlet weak var emojiDate: UILabel!
+    @IBOutlet weak var emojiCategory: UILabel!
+    
     var emoji = ""
 
-    @IBOutlet weak var emojiLabel: UILabel!
-    @IBOutlet weak var emojiCategoryLbel: UILabel!
-    @IBOutlet weak var emojiDefLabel: UILabel!
-    @IBOutlet weak var emojiDateLabel: UILabel!
     
     override func viewDidLoad() {
         
